@@ -1,4 +1,4 @@
-# recipes-api
+# Recipes API
 Application expose backend service who is able to crete, update, search and delete recipes.
 Service use embedded H2 database and Basic authentication.
 
@@ -117,3 +117,6 @@ Status code: 403 (Forbidden)
 
 Further DELETE /api/recipe/1 request with basic authentication; email (login): CamelCaseRecipe@somewhere.com, password: C00k1es.
 Status code: 403 (Forbidden)
+
+# Licence
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
