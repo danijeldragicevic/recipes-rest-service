@@ -20,6 +20,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.userDetailsService(userDetailsService)
 			.passwordEncoder(beansConf.getEncoder());
 
+		/*
+		To enable hardcoded user, uncomment the lines below
+
 		auth
 			.inMemoryAuthentication()
 			.withUser("user1")
@@ -27,6 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.roles()
 			.and()
 			.passwordEncoder(beansConf.getEncoder());
+		 */
 	}
 
 	@Override
