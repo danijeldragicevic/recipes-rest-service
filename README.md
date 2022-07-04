@@ -1,5 +1,5 @@
 # Recipes API
-Application expose backend service who is able to crete, update, search and delete recipes.
+Backend service who is able to crete, update, search and delete recipes.
 Service use embedded H2 database and Basic authentication.
 
 # To install and run application:
