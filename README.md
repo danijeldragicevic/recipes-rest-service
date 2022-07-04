@@ -1,6 +1,6 @@
 # recipes-api
-Application expose backend service who is able to crete, update, search and delete recipes,
-Service use embedded H2 database.
+Application expose backend service who is able to crete, update, search and delete recipes.
+Service use embedded H2 database and Basic authentication.
 
 # To install and run application:
 Navigate to the project root directory and run **./gradlew bootRun**
