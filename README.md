@@ -5,7 +5,7 @@ Service use embedded H2 database and Basic authentication.
 # To install and run application:
 Navigate to the project root directory and run **./gradlew bootRun**
 
-# Exposed endpotins:
+# Exposed endpoints:
 By default service will run on **http://localhost:8881/** <br/>
 Following endpoints will be exposed:
 - POST: api/register
