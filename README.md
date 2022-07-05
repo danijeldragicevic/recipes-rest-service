@@ -5,21 +5,28 @@ Backend service who is able to crete, update, search and delete recipes.
 
 Service use embedded H2 database and Basic authentication.
 
-# To install and run application:
-To run application, please make sure that you already have installed Java 11 and Gradle 7+ on your machine. 
+# Technology
+- Java 11
+- Spring Boot 2.7.1 (Spring Web MVC, Spring Data Jpa, Spring Security, Spring Validation, Project Lombok, H2 database)
+- Gradle 7.4
 
+# To run application:
 Navigate to the project root directory and run **./gradlew bootRun**
 
 # Exposed endpoints:
 By default, service will run on **http://localhost:8881/** <br/>
 Following endpoints will be exposed:
-- POST: api/register
-- POST: api/recipe/new
-- GET: api/recipe/id
-- GET: api/recipe/search?category=<recipe_category> or 
-- GET: api/recipe/search?name=<recipe_name>
-- PUT: api/recipe/id
-- DELETE: api/recipe/id
+
+Methods | Urls | Actions
+--- | --- | --- 
+POST | api/register | Register new user
+POST | api/recipe/new | Create new recipe
+GET | api/recipe/:id | Get recipe by :id
+GET | api/recipe/search?category=[keyword] | Find all recipes with the category :keyword
+GET | api/recipe/search?name=[keyword] | Find all recipes with the name :keyword
+PUT | api/recipe/:id | Update recipe by :id
+DELETE | api/recipe/:id | Delete recipe by :id
+
 
 # Examples
 **Example 1:** POST /api/recipe/new request without authentication
