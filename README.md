@@ -14,10 +14,10 @@ Following endpoints will be exposed:
 - POST: api/register
 - POST: api/recipe/new
 - GET: api/recipe/id
-- DELETE: api/recipe/id
+- GET: api/recipe/search?category=<recipe_category> or 
+- GET: api/recipe/search?name=<recipe_name>
 - PUT: api/recipe/id
-- GET: api/recipe/search?category=recipe_category or 
-- GET: api/recipe/search?name=recipe_name
+- DELETE: api/recipe/id
 
 # Examples
 **Example 1:** POST /api/recipe/new request without authentication
