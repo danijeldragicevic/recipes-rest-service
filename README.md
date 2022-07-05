@@ -1,9 +1,12 @@
 # Recipes API
-Backend service who is able to crete, update, search and delete recipes.
+Backend service who is able to crete, update, search and delete recipes. 
+- Only registered users can create and see recipes.
+- Recipes can be updated and deleted only by the users who created them.
+
 Service use embedded H2 database and Basic authentication.
 
 # To install and run application:
-Navigate to the project root directory and run **./gradlew bootRun**
+To run application, navigate to the project root directory and run **./gradlew bootRun**
 
 # Exposed endpoints:
 By default, service will run on **http://localhost:8881/** <br/>
