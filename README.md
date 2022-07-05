@@ -6,7 +6,7 @@ Service use embedded H2 database and Basic authentication.
 Navigate to the project root directory and run **./gradlew bootRun**
 
 # Exposed endpoints:
-By default service will run on **http://localhost:8881/** <br/>
+By default, service will run on **http://localhost:8881/** <br/>
 Following endpoints will be exposed:
 - POST: api/register
 - POST: api/recipe/new
@@ -39,7 +39,7 @@ Status code: 401 (Unauthorized)
 ```
 Status code: 200 (Ok)
 
-Further POST /api/recipe/new request with basic authentication; email (login): Cook_Programmer@somewhere.com, and password: RecipeInBinary
+Further, POST /api/recipe/new request with basic authentication; email (login): Cook_Programmer@somewhere.com, and password: RecipeInBinary
 ```
 {
    "name": "Mint Tea",
@@ -56,7 +56,7 @@ Response:
 }
 ```
 
-Further PUT /api/recipe/1 request with basic authentication; email (login): Cook_Programmer@somewhere.com, password: RecipeInBinary
+Further, PUT /api/recipe/1 request with basic authentication; email (login): Cook_Programmer@somewhere.com, password: RecipeInBinary
 ```
 {
    "name": "Fresh Mint Tea",
@@ -68,7 +68,7 @@ Further PUT /api/recipe/1 request with basic authentication; email (login): Cook
 ```
 Status code: 204 (No Content)
 
-Further GET /api/recipe/1 request with basic authentication; email (login): Cook_Programmer@somewhere.com, password: RecipeInBinary
+Further, GET /api/recipe/1 request with basic authentication; email (login): Cook_Programmer@somewhere.com, password: RecipeInBinary
 Response:
 ```
 {
@@ -90,7 +90,7 @@ Response:
 ```
 Status code: 200 (Ok)
 
-Further response for the GET /api/recipe/1 request with basic authentication; email (login): CamelCaseRecipe@somewhere.com, password: C00k1es.
+Further, response for the GET /api/recipe/1 request with basic authentication; email (login): CamelCaseRecipe@somewhere.com, password: C00k1es.
 ```
 {
    "name": "Fresh Mint Tea",
@@ -102,7 +102,7 @@ Further response for the GET /api/recipe/1 request with basic authentication; em
 }
 ```
 
-Further PUT /api/recipe/1 request with basic authentication; email (login): CamelCaseRecipe@somewhere.com, password: C00k1es.
+Further, PUT /api/recipe/1 request with basic authentication; email (login): CamelCaseRecipe@somewhere.com, password: C00k1es.
 ```
 {
    "name": "Warming Ginger Tea",
@@ -115,7 +115,7 @@ Further PUT /api/recipe/1 request with basic authentication; email (login): Came
 Status code: 403 (Forbidden)
 
 
-Further DELETE /api/recipe/1 request with basic authentication; email (login): CamelCaseRecipe@somewhere.com, password: C00k1es.
+Further, DELETE /api/recipe/1 request with basic authentication; email (login): CamelCaseRecipe@somewhere.com, password: C00k1es.
 Status code: 403 (Forbidden)
 
 # Licence
