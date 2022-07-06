@@ -63,14 +63,14 @@ public class RecipeController implements IRecipeController {
 	}
 
 	@Override
-	public ResponseEntity<RecipeDto> updateRecipeById(
+	public ResponseEntity updateRecipeById(
 			@AuthenticationPrincipal UserDetails userDetails,
 			@PathVariable long id,
 			@Valid @RequestBody RecipeDto recipeDto) {
 
 		try {
-			RecipeDto updatedRecipe = recipeService.updateRecipeById(userDetails.getUsername(), id, recipeDto);
-			return ResponseEntity.ok(updatedRecipe);
+			recipeService.updateRecipeById(userDetails.getUsername(), id, recipeDto);
+			return ResponseEntity.noContent().build();
 		} catch (NotFoundException e) {
 			return ResponseEntity.notFound().build();
 		} catch (ForbiddenException e) {
