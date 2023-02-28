@@ -1,4 +1,4 @@
-# Recipes API
+# Recipes REST service
 Backend service who is able to crete, update, search and delete recipes. 
 - Only registered users can create and see recipes.
 - Recipes can be updated and deleted only by the users who created them.
