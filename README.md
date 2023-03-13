@@ -14,18 +14,18 @@ Service use embedded H2 database and Basic authentication.
 Navigate to the project root directory and run **./gradlew bootRun**
 
 # Exposed endpoints:
-By default, service will run on **http://localhost:8881/** <br/>
+By default, service will run on **http://localhost:8881** <br/>
 Following endpoints will be exposed:
 
 | Methods | Urls                                 | Actions                                     |
 |---------|--------------------------------------|---------------------------------------------|
-| POST    | api/register                         | Register new user                           |
-| POST    | api/recipe/new                       | Create new recipe                           |
-| GET     | api/recipe/:id                       | Get recipe by :id                           |
-| GET     | api/recipe/search?category=[keyword] | Find all recipes with the category :keyword |
-| GET     | api/recipe/search?name=[keyword]     | Find all recipes with the name :keyword     |
-| PUT     | api/recipe/:id                       | Update recipe by :id                        |
-| DELETE  | api/recipe/:id                       | Delete recipe by :id                        |
+| POST    | /api/register                         | Register new user                           |
+| POST    | /api/recipe/new                       | Create new recipe                           |
+| GET     | /api/recipe/:id                       | Get recipe by :id                           |
+| GET     | /api/recipe/search?category=[keyword] | Find all recipes with the category :keyword |
+| GET     | /api/recipe/search?name=[keyword]     | Find all recipes with the name :keyword     |
+| PUT     | /api/recipe/:id                       | Update recipe by :id                        |
+| DELETE  | /api/recipe/:id                       | Delete recipe by :id                        |
 
 # Examples
 **Example 1:** POST /api/recipe/new request without authentication
